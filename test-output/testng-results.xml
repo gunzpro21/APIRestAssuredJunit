@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-21T10:02:30 ICT" name="Default suite" finished-at="2022-09-21T10:02:30 ICT" duration-ms="52">
+    <groups>
+    </groups>
+    <test started-at="2022-09-21T10:02:30 ICT" name="Default test" finished-at="2022-09-21T10:02:30 ICT" duration-ms="52">
+      <class name="apiTesting.FreeMind">
+        <test-method signature="aa()[pri:0, instance:apiTesting.FreeMind@d29f28]" started-at="2022-09-21T10:02:30 ICT" name="aa" finished-at="2022-09-21T10:02:30 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aa -->
+        <test-method signature="pub()[pri:0, instance:apiTesting.FreeMind@d29f28]" started-at="2022-09-21T10:02:30 ICT" name="pub" finished-at="2022-09-21T10:02:30 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pub -->
+        <test-method signature="pub1()[pri:1, instance:apiTesting.FreeMind@d29f28]" started-at="2022-09-21T10:02:30 ICT" name="pub1" finished-at="2022-09-21T10:02:30 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pub1 -->
+        <test-method signature="abc()[pri:2, instance:apiTesting.FreeMind@d29f28]" started-at="2022-09-21T10:02:30 ICT" name="abc" finished-at="2022-09-21T10:02:30 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc -->
+      </class> <!-- apiTesting.FreeMind -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
