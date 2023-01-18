@@ -13,3 +13,9 @@ This is a project using Rest Assured to test API. I used the public API https://
 * Maven Installed 
 * Eclipse (Or another Java IDE)
 # How to execute the tests:
+You can open each test class on src\test\java\mainStream and execute a specific test you want to run(you to need configure build path to Junit4 on Eclipse).
+#Running the test suites
+The test suites can be run directly by your IDE or by command line. If you run mvn test all the tests will execute because it's the regular Maven lifecycle to run all the tests.
+- mvn test
+To run different suites based on the groups defined for each test you must inform the property. The example below shows how to run the test for each pipeline stage:
+- mvn -Dtest=LoginTest test
