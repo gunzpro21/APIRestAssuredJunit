@@ -18,3 +18,8 @@ You can open each test class on src\test\java\mainStream and execute a specific 
 - The test suites can be run directly by your IDE or by command line. If you run mvn test all the tests will execute because it's the regular Maven lifecycle to run all the tests: mvn test.
 - To run different suites based on the groups defined for each test you must inform the property. The example below shows how to run the test for each pipeline stage:
 mvn -Dtest=LoginTest test
+# Cucumber Report
+This is a feature overview page:
+![image](https://user-images.githubusercontent.com/27693044/228485644-aa06c22a-e770-4e32-9e27-b9865d7877a9.png)
+And detail Page
+![image](https://user-images.githubusercontent.com/27693044/228486123-4ed9641f-7d8d-4e36-99d1-410edd50239a.png)
