@@ -1,6 +1,6 @@
 # Don't hesitate to give me a ⭐ to make the project more popular.
 # APIRestAssuredJunit
-This is a project using Rest Assured to test API. I used the public API https://reqres.in/, so you can be easy to touch, apply and learn others' APIs. You can reach me via https://github.com/gunzpro21/gunzpro21.
+This is a project using Rest Assured to test API. I used the public API https://reqres.in/, so you can be easy to touch, apply and learn others' APIs. [You can reach me](https://github.com/gunzpro21/gunzpro21). 
 ## Tools / libraries used:
 1. Java 1.8
 2. Rest Assured 4.5.1
