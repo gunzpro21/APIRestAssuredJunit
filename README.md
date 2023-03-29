@@ -9,9 +9,9 @@ This is a project using Rest Assured to test API. I used the public API https://
 6. Lombok 1.18.20
 7. Java faker 1.0.2
 # Required software:
-* Java 1.8+ installed 
-* Maven Installed 
-* Eclipse (Or another Java IDE)
+* [Java 1.8+ installed](https://phoenixnap.com/kb/install-java-windows)
+* [Maven Installed](https://mkyong.com/maven/how-to-install-maven-in-windows/)
+* [Enable LOMBOK plugin on your IDE](https://www.baeldung.com/lombok-ide)
 # How to execute the tests:
 You can open each test class on src\test\java\mainStream and execute a specific test you want to run( **You to need configure build path to Junit4 on Eclipse**).
 # Running the test suites
