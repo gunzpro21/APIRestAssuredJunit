@@ -51,7 +51,7 @@ public class FreeMind extends BaseTest {
 		return result;
 	}
     
-	//@Test
+	@Test
 	public void T04_ExceptionTest() {
 		throw new RuntimeException();
 	}

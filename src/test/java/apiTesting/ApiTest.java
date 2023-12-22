@@ -1,3 +1,4 @@
+
 package apiTesting;
 
 import static io.restassured.RestAssured.given;
@@ -11,22 +12,19 @@ import org.junit.runner.RunWith;
 
 import com.aventstack.extentreports.markuputils.CodeLanguage;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 
-import apiPaths.UserPaths;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import jsonObjects.BookingResponse;
-import jsonObjects.UserInfo;
 import mainStream.BaseTest;
-import mainStream.MyTestRunner;
+import mainStream.MyControllerTest;
 /**
  * <h1>Add a ping!</h1> The APITest give examples of all apis
  * 
@@ -35,7 +33,7 @@ import mainStream.MyTestRunner;
  */
 
 
-@RunWith(MyTestRunner.class)
+@RunWith(MyControllerTest.class)
 public class ApiTest extends BaseTest{
 
 

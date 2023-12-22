@@ -66,8 +66,6 @@ public class ExtentReportListner extends RunListener {
 		// Print the number of tests before the all tests execution.
 		System.out.println("Tests started! Number of Test case: " + description.testCount() + "\n");
 
-		// extentSpark = new ExtentSparkReporter("test-output/Extent/" +
-		// "RA_Report.html");
 		extentSpark = new ExtentSparkReporter(ReportLocation + "RA_Report" + SstartTime + ".html").viewConfigurer()
 				.viewOrder().as(new ViewName[] { ViewName.DASHBOARD, ViewName.TEST ,ViewName.CATEGORY})
 				.apply();
@@ -79,10 +77,8 @@ public class ExtentReportListner extends RunListener {
 		
 		extentReports.setSystemInfo("OS", System.getProperty("os.name").toString());
 		//extentReports.addTestRunnerOutput("Test Execution Report");
-		extentTest = extentReports.createTest(description.getMethodName());
-		extentTest.info(description.getMethodName());
 
-		System.out.println(description.getMethodName());
+
 
 		super.testRunStarted(description);
 	}
@@ -90,7 +86,6 @@ public class ExtentReportListner extends RunListener {
 	@Override
 	public void testRunFinished(Result result) throws Exception {
 		System.out.println("\nTests finished! Number of Test case: " + result.getRunCount());
-		// TODO Auto-generated method stub
 		extentReports.flush();
 		super.testRunFinished(result);
 	}
@@ -99,7 +94,7 @@ public class ExtentReportListner extends RunListener {
 	public void testStarted(Description description) throws Exception {
 		extentTest = extentReports.createTest(description.getMethodName());
 		extentTest.info("The Test " + description.getMethodName() + " start!");
-		// TODO Auto-generated method stub
+
 		super.testStarted(description);
 	}
 
