@@ -11,6 +11,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class PostRequest {
+	//how to get a specific body of json
   @Test
   public void checkPost() {
 	  RestAssured.baseURI ="http://restapi.demoqa.com/customer/register";

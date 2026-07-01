@@ -11,6 +11,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import jsonObjects.Book;
 
+//how to handle multiple same objects at the same json response
 public class JsonPathTest2 {
 	//obsolete URL
 	//@Test

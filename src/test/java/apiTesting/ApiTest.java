@@ -32,7 +32,7 @@ import mainStream.MyControllerTest;
  * @since 2022 Oct 14th
  */
 
-
+//mapping nested json  to pojo class using Gson
 @RunWith(MyControllerTest.class)
 public class ApiTest extends BaseTest{
 
@@ -55,22 +55,20 @@ public class ApiTest extends BaseTest{
 		assertThat(statusCode, is(200));
 	}
 
-	// @Test
+	@Test
 	public void myFourthRaTest() {
 		Response response = given().log().all().get("https://restful-booker.herokuapp.com/booking/1");
 
 		String reader = response.body().asString();
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		JsonElement jsonElement = new JsonParser().parse(reader);
-		// System.out.println("response: "+ gson.toJson(jsonElement));
-		// k co then thi eo co log, ma co then thi eo con la kieu response? :))
+	
 		ValidatableResponse myresponse = given().log().all().get("https://restful-booker.herokuapp.com/booking/1")
 				.then().log().all();
-		// System.out.println("check validate "+ myresponse.body());
 
 		BookingResponse responseBody = response.as(BookingResponse.class);
 		String name = responseBody.getFirstname();
-		assertThat(name, is("Sally"));
+		assertThat(name, is("Susan"));
 	}
 
 	// @Test death API

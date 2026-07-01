@@ -1,7 +1,8 @@
 package apiTesting;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;

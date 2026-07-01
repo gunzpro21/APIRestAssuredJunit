@@ -1,13 +1,11 @@
 package apiTesting;
 
-import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 
 import org.junit.Test;
 
-import dataProvider.ConfigFileReader;
-import dataProvider.FileReaderManager;
+import jsonObjects.Trashlambok;
 import mainStream.BaseTest;
 
 //@RunWith(MyTestRunner.class)
@@ -51,6 +49,12 @@ public class FreeMind extends BaseTest {
 		return result;
 	}
     
+	@Test
+	public void pub() {
+		Trashlambok abc= new Trashlambok("dsda","dsada","dasda");
+		System.out.println(abc.toString());
+	}
+	
 	@Test
 	public void T04_ExceptionTest() {
 		throw new RuntimeException();

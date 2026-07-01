@@ -15,9 +15,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.aventstack.extentreports.reporter.configuration.ViewName;
+
 /**
- * <h1>Add a ping!</h1> ExtentReportListner extents RunListener of Junit and reuse it for ExtentReports
- * This class create a report file and configure filename, it also configure @Test methods.
+ * <h1>Add a ping!</h1> ExtentReportListner extents RunListener of Junit and
+ * reuse it for ExtentReports This class create a report file and configure
+ * filename, it also configure @Test methods.
+ * 
  * @author Joe Phan | email: grenade.eminem@gmail.com
  * @since 2022 Oct 14th
  */
@@ -62,24 +65,19 @@ public class ExtentReportListner extends RunListener {
 		String pattern = "dMMMyyyy_HH-mm-ss";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		String SstartTime = simpleDateFormat.format(new Date());
-		System.out.println("* Time: "+SstartTime);
+		System.out.println("* Time: " + SstartTime);
 		// Print the number of tests before the all tests execution.
 		System.out.println("Tests started! Number of Test case: " + description.testCount() + "\n");
 
 		extentSpark = new ExtentSparkReporter(ReportLocation + "RA_Report" + SstartTime + ".html").viewConfigurer()
-				.viewOrder().as(new ViewName[] { ViewName.DASHBOARD, ViewName.TEST ,ViewName.CATEGORY})
-				.apply();
+				.viewOrder().as(new ViewName[] { ViewName.DASHBOARD, ViewName.TEST, ViewName.CATEGORY }).apply();
 		extentSpark.config().setReportName("Rest Assure API Project");
 		extentSpark.config().setTheme(Theme.DARK);
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(extentSpark);
 		extentReports.setSystemInfo("Author", "Joe Phan");
-		
+
 		extentReports.setSystemInfo("OS", System.getProperty("os.name").toString());
-		//extentReports.addTestRunnerOutput("Test Execution Report");
-
-
-
 		super.testRunStarted(description);
 	}
 
@@ -102,7 +100,6 @@ public class ExtentReportListner extends RunListener {
 	public void testFinished(Description description) throws Exception {
 		System.out.println("Tests finished!" + description.getMethodName());
 		extentTest.info("The Test " + description.getMethodName() + " is finished!");
-
 		super.testFinished(description);
 	}
 
